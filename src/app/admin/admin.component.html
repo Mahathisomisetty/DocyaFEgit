@@ -1,0 +1,50 @@
+<mat-toolbar>
+    <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+    <span><h1 style="padding: 15px;">Admin DashBoard</h1></span>
+</mat-toolbar>
+<mat-sidenav-container class="side">
+    <mat-sidenav  #nav opened>
+        <a [routerLink]="['homea']">
+        <button mat-button>
+            
+            <span>home</span>
+        </button></a>
+        <a href="vpatient">
+            <button mat-button> 
+                <span>view doctors</span>
+            </button></a>
+            <a href="vpatient">
+                <button mat-button>
+                    <mat-icon><i class="fa-solid fa-eye"></i></mat-icon>
+                    <span>view nurse</span>
+                </button></a>
+                <a href="vpatient">
+                    <button mat-button>
+                        <mat-icon><i class="fa-solid fa-eye"></i></mat-icon>
+                        <span> view patients</span>
+                    </button></a>
+                    <a href="vpatient">
+                        <button mat-button>
+                            <mat-icon><i class="fa-solid fa-eye"></i></mat-icon>
+                            <span>Add doctor</span>
+                        </button></a>
+                        <a href="vpatient">
+                            <button mat-button>
+                                <mat-icon><i class="fa-solid fa-eye"></i></mat-icon>
+                                <span>Add Nurse</span>
+                            </button></a>
+                            <a href="vpatient">
+                                <button mat-button>
+                                    <mat-icon><i class="fa-solid fa-eye"></i></mat-icon>
+                                    <span>Edit doctor</span>
+                                </button></a>
+                                <a>
+                                    <button mat-button>
+                                        <mat-icon><i class="fa-solid fa-eye"></i></mat-icon>
+                                        <span>Edit nurse</span>
+                                    </button></a>
+    </mat-sidenav>
+    <mat-sidenav-content >
+        <router-outlet>home</router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

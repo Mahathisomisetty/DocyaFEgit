@@ -1,0 +1,13 @@
+.side{
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: yellow;
+  } 
+  mat-sidenav{
+    width: 200px;
+    padding: 20px;
+  } 
+  

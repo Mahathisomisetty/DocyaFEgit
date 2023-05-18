@@ -1,0 +1,89 @@
+<div class="container">
+    <mat-card class="card">
+        <mat-card-content>
+            <form class="example-form">
+              
+               
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>First name</mat-label>
+                    <input matInput>
+                  </mat-form-field></td> &nbsp;&nbsp;&nbsp;&nbsp;
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput>
+                  </mat-form-field></td>
+                </tr></table>
+                <table class="example-full-width" cellspacing="0"><tr>
+                    <td><mat-form-field class="example-full-width">
+                      <mat-label>Gender</mat-label>
+                      <input matInput>
+                    </mat-form-field></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><mat-form-field class="example-full-width">
+                      <mat-label>Date Of Birth</mat-label>
+                      <input matInput>
+                    </mat-form-field></td>
+                  </tr></table>
+                  <table class="example-full-width" cellspacing="0"><tr>
+                    <td><mat-form-field class="example-full-width">
+                      <mat-label>Contact Number</mat-label>
+                      <input matInput>
+                    </mat-form-field></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <td><mat-form-field class="example-full-width">
+                      <mat-label>Blood Gruop</mat-label>
+                      <input matInput>
+                    </mat-form-field></td>
+                  </tr></table>
+                  <div class="example-container">
+                   
+                    </div>
+                   
+                    <table class="example-full-width" cellspacing="0"><tr>
+                        <td><mat-form-field appearance="fill">
+                            <mat-label>Enter your email</mat-label>
+                            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                          </mat-form-field></td>
+                        <td>
+                        <td> <mat-form-field appearance="fill">
+                            <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                          </mat-form-field></td>
+                        
+                      </tr></table>
+                  
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>City</mat-label>
+                    <input matInput placeholder="Ex. San Francisco">
+                  </mat-form-field></td>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>State</mat-label>
+                    <input matInput placeholder="Ex. California">
+                  </mat-form-field></td>
+                  <td>
+                </tr></table>
+              </form>
+              <mat-form-field class="example-full-width">
+                <mat-label>Address</mat-label>
+                <textarea matInput placeholder="Ex. 100 Main St">1600 Amphitheatre Pkwy</textarea>
+              </mat-form-field>
+              &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Existing user?<a href="login">Login</a>
+            
+        </mat-card-content>
+        <div >
+            <button mat-button class="saved" style="color: black; margin-left: 160px;">Submit</button>&nbsp;&nbsp;
+            <button class="save" mat-button  mat-dialog-close>Close</button>
+            
+        </div>
+       
+    </mat-card>
+    </div>
+   
+  
+  <footer class="foot" style="background-color:green;">&copy; CopyRight by Docya 2023</footer>

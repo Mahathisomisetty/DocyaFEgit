@@ -1,0 +1,33 @@
+.container{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(15deg, #007bff, #d0314c);
+    height: 100vh;
+    overflow: hidden;
+  }
+  .card{
+    width: 500px;
+    padding-left: 0px;
+    visibility: none;
+    margin-left: 400px;
+    margin-top: 15px;
+   
+    
+  }
+  .save{
+    align-items: center;
+    float: inline-end;
+  }
+  .save:hover{
+    background-color: red;
+  }
+  .saved:hover{
+    background-color: green;
+  }
+  .foot{
+   
+    text-align: center;
+}
