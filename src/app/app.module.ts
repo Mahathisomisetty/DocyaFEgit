@@ -19,18 +19,22 @@ import {MatCommonModule} from '@angular/material/core';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { AdminComponent } from './admin/admin.component';
+import { DoctorComponent } from './doctor/doctor.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    AdminComponent
+    AdminComponent,
+    DoctorComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
     AppRoutingModule,MatDialogModule,MatInputModule,MatCardModule,MatToolbarModule,
     BrowserAnimationsModule,MatMenuModule,MatIconModule,MatButtonModule,MatFormFieldModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule,MatTooltipModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
