@@ -21,6 +21,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { AdminComponent } from './admin/admin.component';
 import { DoctorComponent } from './doctor/doctor.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { NurseComponent } from './nurse/nurse.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     LoginComponent,
     RegisterComponent,
     AdminComponent,
-    DoctorComponent
+    DoctorComponent,
+    NurseComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
