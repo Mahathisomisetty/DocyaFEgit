@@ -22,6 +22,7 @@ import { AdminComponent } from './admin/admin.component';
 import { DoctorComponent } from './doctor/doctor.component';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { NurseComponent } from './nurse/nurse.component';
+import { ViewappointmentsComponent } from './nurse/viewappointments/viewappointments.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NurseComponent } from './nurse/nurse.component';
     RegisterComponent,
     AdminComponent,
     DoctorComponent,
-    NurseComponent
+    NurseComponent,
+    ViewappointmentsComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
