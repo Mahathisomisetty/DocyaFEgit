@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import {MatDialog} from '@angular/material/dialog';
+
 @Component({
   selector: 'app-viewappointments',
   templateUrl: './viewappointments.component.html',

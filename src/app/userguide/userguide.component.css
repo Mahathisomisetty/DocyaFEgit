@@ -1,0 +1,15 @@
+.nav{
+    background-color: skyblue;
+    text-align: center;
+}
+.foot{
+    background-color: beige;
+    text-align: center;
+}
+.example-input-wrapper {
+    margin-bottom: 16px;
+  }
+  
+label{
+    margin-right: 4px;
+}

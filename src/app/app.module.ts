@@ -20,9 +20,18 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { AdminComponent } from './admin/admin.component';
 import { DoctorComponent } from './doctor/doctor.component';
+import {MatTableModule} from '@angular/material/table';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { NurseComponent } from './nurse/nurse.component';
 import { ViewappointmentsComponent } from './nurse/viewappointments/viewappointments.component';
+import { UserguideComponent } from './userguide/userguide.component';
+import { NurseprofileComponent } from './nurse/nurseprofile/nurseprofile.component';
+import { PatientComponent } from './patient/patient.component';
+import { ViewdoctorComponent } from './admin/viewdoctor/viewdoctor.component';
+import { ViewnurseComponent } from './admin/viewnurse/viewnurse.component';
+import { ViewpatientsComponent } from './admin/viewpatients/viewpatients.component';
+import { AdddoctorComponent } from './admin/adddoctor/adddoctor.component';
+import { AddnurseComponent } from './admin/addnurse/addnurse.component';
 
 @NgModule({
   declarations: [
@@ -32,13 +41,21 @@ import { ViewappointmentsComponent } from './nurse/viewappointments/viewappointm
     AdminComponent,
     DoctorComponent,
     NurseComponent,
-    ViewappointmentsComponent
+    ViewappointmentsComponent,
+    UserguideComponent,
+    NurseprofileComponent,
+    PatientComponent,
+    ViewdoctorComponent,
+    ViewnurseComponent,
+    ViewpatientsComponent,
+    AdddoctorComponent,
+    AddnurseComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
     AppRoutingModule,MatDialogModule,MatInputModule,MatCardModule,MatToolbarModule,
     BrowserAnimationsModule,MatMenuModule,MatIconModule,MatButtonModule,MatFormFieldModule,
-    ReactiveFormsModule,MatTooltipModule, 
+    ReactiveFormsModule,MatTooltipModule, MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
