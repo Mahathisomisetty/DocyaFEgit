@@ -28,6 +28,7 @@ const routes: Routes = [
 {path:'nurseprofile',component:NurseprofileComponent},
 {path:'viewdoctor',component:ViewdoctorComponent},{path:'viewnurse',component:ViewnurseComponent},{path:'viewpatients',component:ViewpatientsComponent},
 {path:'adddoctor',component:AdddoctorComponent},{path:'addnurse',component:AddnurseComponent},
+{ path: "**", redirectTo: "admin" },
 ];
 
 @NgModule({

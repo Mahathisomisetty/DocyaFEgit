@@ -3,24 +3,21 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
-export interface PeriodicElement {
+export interface viewnurse {
   name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  id: number;
+  contact: number;
+  emailid: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+const ELEMENT_DATA: viewnurse[] = [
+  {id: 1, name: 'samyuktha', contact: 9765432109, emailid: 'samyuktha@nurse.com'},
+  {id: 2, name: 'sundar', contact: 9765432109, emailid: 'sundar@nurse.com'},
+  {id: 3, name: 'olivia', contact: 9765432109, emailid: 'olivia@nurse.com'},
+  {id: 4, name: 'sophila', contact: 9765432109, emailid: 'sophia@nurse.com'},
+  {id: 5, name: 'bella', contact: 9765432109, emailid: 'bella@nurse.com'},
+  {id: 6, name: 'jute', contact: 9765432109, emailid: 'jute@nurse.com'},
+  
 ];
 @Component({
   selector: 'app-viewnurse',
@@ -28,7 +25,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrls: ['./viewnurse.component.css']
 })
 export class ViewnurseComponent {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['id', 'name', 'emailid','contact'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(event: Event) {
