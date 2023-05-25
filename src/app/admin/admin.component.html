@@ -3,8 +3,12 @@
     <a href="viewdoctor/"><button>view doctors</button></a>&nbsp;
     <a href="viewnurse/"><button>view nurse</button></a>
     <a href="viewpatients/"><button>view Patients</button></a>
-    <a href="adddoctor/"><button>Add doctors</button></a>
-    <a href="addnurse/"><button>Add Nurse</button></a>
+    <div>
+        <button mat-button (click)="openDialog()">Add Doctor</button>
+      </div>
+      <div>
+        <button mat-button (click)="openDialog()">Add Nurse</button>
+      </div>
 </ul>
 
 

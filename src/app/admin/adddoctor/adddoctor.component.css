@@ -1,0 +1,13 @@
+.save{
+    align-items: center;
+    float: inline-end;
+  }
+  .save:hover{
+    background-color:lightcoral;
+  }
+  .saved:hover{
+    background-color: skyblue;
+  }
+ .card{
+    background-color:white;
+}
