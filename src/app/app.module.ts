@@ -38,6 +38,7 @@ import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboa
 import { BookavailabilityComponent } from './doctor/bookavailability/bookavailability.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { AdminprofileComponent } from './admin/adminprofile/adminprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import { MatNativeDateModule } from '@angular/material/core';
     DvappointmentsComponent,
     DoctorprofileComponent,
     DoctordashboardComponent,
-    BookavailabilityComponent
+    BookavailabilityComponent,
+    AdminprofileComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,

@@ -20,7 +20,7 @@ export class DoctorComponent {
 
     if (currentHour < 12) {
       this.greetingMessage = 'Good morning!';
-    } else if (currentHour < 18) {
+    } else if (currentHour < 17) {
       this.greetingMessage = 'Good afternoon!';
     } else {
       this.greetingMessage = 'Good evening!';

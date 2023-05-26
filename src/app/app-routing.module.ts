@@ -18,6 +18,7 @@ import { DvappointmentsComponent } from './doctor/dvappointments/dvappointments.
 import { DoctorprofileComponent } from './doctor/doctorprofile/doctorprofile.component';
 import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboard.component';
 import { BookavailabilityComponent } from './doctor/bookavailability/bookavailability.component';
+import { AdminprofileComponent } from './admin/adminprofile/adminprofile.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -39,6 +40,7 @@ const routes: Routes = [
   {path:'doctorprofile',component:DoctorprofileComponent},
   {path:'doctordashboard',component:DoctordashboardComponent},
   {path:'bookavailability',component:BookavailabilityComponent},
+  {path:'adminprofile',component:AdminprofileComponent},
 { path: "**", redirectTo: "admin" },
 ];
 
