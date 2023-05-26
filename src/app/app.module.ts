@@ -32,6 +32,9 @@ import { ViewnurseComponent } from './admin/viewnurse/viewnurse.component';
 import { ViewpatientsComponent } from './admin/viewpatients/viewpatients.component';
 import { AdddoctorComponent } from './admin/adddoctor/adddoctor.component';
 import { AddnurseComponent } from './admin/addnurse/addnurse.component';
+import { DvappointmentsComponent } from './doctor/dvappointments/dvappointments.component';
+import { DoctorprofileComponent } from './doctor/doctorprofile/doctorprofile.component';
+import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboard.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,10 @@ import { AddnurseComponent } from './admin/addnurse/addnurse.component';
     ViewnurseComponent,
     ViewpatientsComponent,
     AdddoctorComponent,
-    AddnurseComponent
+    AddnurseComponent,
+    DvappointmentsComponent,
+    DoctorprofileComponent,
+    DoctordashboardComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,

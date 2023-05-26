@@ -14,6 +14,9 @@ import { ViewnurseComponent } from './admin/viewnurse/viewnurse.component';
 import { ViewpatientsComponent } from './admin/viewpatients/viewpatients.component';
 import { AdddoctorComponent } from './admin/adddoctor/adddoctor.component';
 import { AddnurseComponent } from './admin/addnurse/addnurse.component';
+import { DvappointmentsComponent } from './doctor/dvappointments/dvappointments.component';
+import { DoctorprofileComponent } from './doctor/doctorprofile/doctorprofile.component';
+import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboard.component';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
@@ -26,8 +29,14 @@ const routes: Routes = [
 {path:'viewappointments',component:ViewappointmentsComponent},
 {path:'userguide',component:UserguideComponent},
 {path:'nurseprofile',component:NurseprofileComponent},
-{path:'viewdoctor',component:ViewdoctorComponent},{path:'viewnurse',component:ViewnurseComponent},{path:'viewpatients',component:ViewpatientsComponent},
-{path:'adddoctor',component:AdddoctorComponent},{path:'addnurse',component:AddnurseComponent},
+{path:'viewdoctor',component:ViewdoctorComponent},
+{path:'viewnurse',component:ViewnurseComponent},
+{path:'viewpatients',component:ViewpatientsComponent},
+{path:'adddoctor',component:AdddoctorComponent},{
+  path:'addnurse',component:AddnurseComponent},
+  {path:'dvappointments',component:DvappointmentsComponent},
+  {path:'doctorprofile',component:DoctorprofileComponent},
+  {path:'doctordashboard',component:DoctordashboardComponent},
 { path: "**", redirectTo: "admin" },
 ];
 

@@ -2,3 +2,6 @@ nav{
   background-color: yellowgreen;
   
 }
+.logout{
+  flex: 1 1 auto;
+}

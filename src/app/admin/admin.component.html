@@ -1,14 +1,16 @@
 <nav></nav>
  <ul>
-    <a href="viewdoctor/"><button>view doctors</button></a>&nbsp;
-    <a href="viewnurse/"><button>view nurse</button></a>
-    <a href="viewpatients/"><button>view Patients</button></a>
-    <div>
+    <a href="viewdoctor/"><button mat-button>View Doctors</button></a>&nbsp;
+    <a href="viewnurse/"><button mat-button>View Nurse</button></a>
+    <a href="viewpatients/"><button mat-button>View Patients</button></a>
+    
         <button mat-button (click)="openDialog()">Add Doctor</button>
-      </div>
-      <div>
+      
         <button mat-button (click)="openDialog()">Add Nurse</button>
-      </div>
+      
 </ul>
-
+<a href="#">Profile</a>
+<div class="logout">
+<mat-icon><a href="login/">logout</a></mat-icon>
+</div>
 
