@@ -5,17 +5,17 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 
 export interface PeriodicElement {
   name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  token: number;
+  bookedon: string;
+  notes: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'Boron', weight: 10.811, symbol: 'B'},
+  {token: 1, name: 'sam', bookedon: '26-6-2023', notes: 'i am having high fever from two days and feeling tired'},
+  {token: 2, name: 'jin', bookedon: '26-6-2023', notes: 'i am having high fever from two days and feeling tired'},
+  {token: 3, name: 'jack', bookedon: '26-6-2023', notes: 'i am having high fever from two days and feeling tired'},
+  {token: 4, name: 'bob', bookedon: '26-6-2023', notes: 'i am having high fever from two days and feeling tired'},
+  {token: 5, name: 'ram', bookedon: '26-6-2023', notes: 'i am having high fever from two days and feeling tired'},
   
 ];
 @Component({
@@ -29,7 +29,7 @@ export class DoctordashboardComponent {
   constructor() {
     this.currentDate = new Date();
   }
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['token', 'name', 'bookedon', 'notes'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(event: Event) {
