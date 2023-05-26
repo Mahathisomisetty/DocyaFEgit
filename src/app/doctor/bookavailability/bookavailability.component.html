@@ -33,7 +33,33 @@
   </header>
   <div class='content'>
     <h1 class='title'>Book availability Schedule</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <mat-form-field color="primary">
+      <mat-label>Inherited calendar color</mat-label>
+      <input matInput [matDatepicker]="picker1">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+      <mat-datepicker #picker1></mat-datepicker>
+    </mat-form-field>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <mat-form-field color="primary">
+      <mat-label>Custom calendar color</mat-label>
+      <input matInput [matDatepicker]="picker2">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+      <mat-datepicker #picker2 color="primary"></mat-datepicker>
+    </mat-form-field>
+    &nbsp;
+    &nbsp;
+    &nbsp;
     
-    
+    <button style="background-color: green;" mat-button>Save</button>
   </div>
+
+  
 

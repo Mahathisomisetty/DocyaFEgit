@@ -36,7 +36,8 @@ import { DvappointmentsComponent } from './doctor/dvappointments/dvappointments.
 import { DoctorprofileComponent } from './doctor/doctorprofile/doctorprofile.component';
 import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboard.component';
 import { BookavailabilityComponent } from './doctor/bookavailability/bookavailability.component';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,7 @@ import { BookavailabilityComponent } from './doctor/bookavailability/bookavailab
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
     AppRoutingModule,MatDialogModule,MatInputModule,MatCardModule,MatToolbarModule,
     BrowserAnimationsModule,MatMenuModule,MatIconModule,MatButtonModule,MatFormFieldModule,
-    ReactiveFormsModule,MatTooltipModule, MatTableModule,
+    ReactiveFormsModule,MatTooltipModule, MatTableModule,MatDatepickerModule,MatNativeDateModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
