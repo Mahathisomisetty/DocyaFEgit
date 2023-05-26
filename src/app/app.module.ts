@@ -35,6 +35,7 @@ import { AddnurseComponent } from './admin/addnurse/addnurse.component';
 import { DvappointmentsComponent } from './doctor/dvappointments/dvappointments.component';
 import { DoctorprofileComponent } from './doctor/doctorprofile/doctorprofile.component';
 import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboard.component';
+import { BookavailabilityComponent } from './doctor/bookavailability/bookavailability.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboa
     AddnurseComponent,
     DvappointmentsComponent,
     DoctorprofileComponent,
-    DoctordashboardComponent
+    DoctordashboardComponent,
+    BookavailabilityComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,

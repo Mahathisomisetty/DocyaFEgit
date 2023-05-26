@@ -43,7 +43,7 @@ body {
   
   .content {
     width: 90%;
-    height: 500px;
+    height: auto;
     background: #fff;
     margin: 0 auto;
     margin-top: -3em;
@@ -55,5 +55,14 @@ body {
     margin: 0;
     padding-bottom: 0.4em;
     border-bottom: 1px solid grey;
+  }
+  /* Structure */
+table {
+    width: 100%;
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 100%;
   }
   
