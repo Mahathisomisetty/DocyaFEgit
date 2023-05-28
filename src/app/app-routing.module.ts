@@ -19,28 +19,31 @@ import { DoctorprofileComponent } from './doctor/doctorprofile/doctorprofile.com
 import { DoctordashboardComponent } from './doctor/doctordashboard/doctordashboard.component';
 import { BookavailabilityComponent } from './doctor/bookavailability/bookavailability.component';
 import { AdminprofileComponent } from './admin/adminprofile/adminprofile.component';
+import { FrontpageComponent } from './frontpage/frontpage.component';
 
 const routes: Routes = [
-  {path:'',component:LoginComponent},
+  {path:'',component:FrontpageComponent},
+  {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
   {path:'patient',component:PatientComponent},
   {path:'admin',component:AdminComponent},
   {path:'doctor',component:DoctorComponent},
   {path:'nurse',component:NurseComponent},
-{path:'viewappointments',component:ViewappointmentsComponent},
-{path:'userguide',component:UserguideComponent},
-{path:'nurseprofile',component:NurseprofileComponent},
-{path:'viewdoctor',component:ViewdoctorComponent},
-{path:'viewnurse',component:ViewnurseComponent},
-{path:'viewpatients',component:ViewpatientsComponent},
-{path:'adddoctor',component:AdddoctorComponent},{
-  path:'addnurse',component:AddnurseComponent},
+  {path:'viewappointments',component:ViewappointmentsComponent},
+  {path:'userguide',component:UserguideComponent},
+  {path:'nurseprofile',component:NurseprofileComponent},
+  {path:'viewdoctor',component:ViewdoctorComponent},
+  {path:'viewnurse',component:ViewnurseComponent},
+  {path:'viewpatients',component:ViewpatientsComponent},
+  {path:'adddoctor',component:AdddoctorComponent},
+  {path:'addnurse',component:AddnurseComponent},
   {path:'dvappointments',component:DvappointmentsComponent},
   {path:'doctorprofile',component:DoctorprofileComponent},
   {path:'doctordashboard',component:DoctordashboardComponent},
   {path:'bookavailability',component:BookavailabilityComponent},
   {path:'adminprofile',component:AdminprofileComponent},
+ 
 { path: "**", redirectTo: "admin" },
 ];
 

@@ -8,5 +8,9 @@ import {MatDialog} from '@angular/material/dialog';
   styleUrls: ['./viewappointments.component.css']
 })
 export class ViewappointmentsComponent {
+  currentDate: Date;
 
+  constructor() {
+    this.currentDate = new Date();
+  }
 }
