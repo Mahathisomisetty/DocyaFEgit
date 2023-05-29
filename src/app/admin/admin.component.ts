@@ -5,6 +5,8 @@ import {FormControl} from '@angular/forms';
 import {MatDrawerMode} from '@angular/material/sidenav';
 import { AdddoctorComponent } from './adddoctor/adddoctor.component';
 import { AddnurseComponent } from './addnurse/addnurse.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @Component({
   selector: 'app-admin',

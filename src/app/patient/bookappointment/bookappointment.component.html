@@ -1,0 +1,48 @@
+
+<div class="sample">
+    <mat-card class="card">
+      <h3 class="heading">Booking an Appointment</h3>
+      <mat-dialog-content>
+       <table class="example-full-width" cellspacing="0"><tr>
+        <mat-form-field class="example-full-width">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker">
+              <mat-icon matDatepickerToggleIcon>event</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+          
+          
+         <!-- <td><mat-form-field class="example-full-width">
+             <input matInput [matDatepicker]="picker" [(ngModel)]="selectedDate" placeholder="Choose a date">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field></td> -->
+          <td><mat-form-field class="example-full-width">
+            <mat-label>Doctor</mat-label>
+            <mat-select>
+              <mat-option value="karl">Karl(Skin Specialist)</mat-option>
+              <mat-option value="kamesh">Kamesh(Heart Specialist)</mat-option>
+                <mat-option value="parameshwar">Parameshwar(ENT)</mat-option>
+            </mat-select>
+          </mat-form-field></td>
+        </tr>
+        </table>
+        <table><tr>
+          <td><mat-form-field class="notes">
+            <mat-label>Suggestions</mat-label>
+            <textarea matInput placeholder="Ex. suffering from ...">...</textarea>
+          </mat-form-field></td>
+        </tr>
+        </table>
+        
+        <div class="button" align="end">
+          <button mat-button mat-dialog-close class="saved">Save</button>
+          <button mat-button mat-dialog-close class="save">Cancel</button>
+        </div>
+      </mat-dialog-content>  
+    </mat-card> 
+  </div>
+    

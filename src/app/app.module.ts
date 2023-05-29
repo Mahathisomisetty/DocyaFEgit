@@ -40,6 +40,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { AdminprofileComponent } from './admin/adminprofile/adminprofile.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
+import { BookappointmentComponent } from './patient/bookappointment/bookappointment.component';
+import {MatSelectModule} from '@angular/material/select';
+import { ViewEncapsulation } from '@angular/compiler';
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,13 +65,15 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
     DoctordashboardComponent,
     BookavailabilityComponent,
     AdminprofileComponent,
-    FrontpageComponent
+    FrontpageComponent,
+    BookappointmentComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
     AppRoutingModule,MatDialogModule,MatInputModule,MatCardModule,MatToolbarModule,
     BrowserAnimationsModule,MatMenuModule,MatIconModule,MatButtonModule,MatFormFieldModule,
-    ReactiveFormsModule,MatTooltipModule, MatTableModule,MatDatepickerModule,MatNativeDateModule 
+    ReactiveFormsModule,MatTooltipModule, MatTableModule,MatDatepickerModule,MatNativeDateModule ,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
