@@ -3,7 +3,7 @@
     
     <p>Booked Appoinments by patient</p>
     <h5>{{currentDate | date: 'dd-MMM-yyyy' }}</h5>
-    <button mat-raised-button (click)="openDialog()" color="primary"class="button">Book Appointment</button>
+    <button mat-raised-button (click)="openDialog()" color="primary"class="button">New observation</button>
     <br><br>
     
     <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
@@ -43,4 +43,3 @@
       </table>
       
 </div>
-<a href="patienthistory/"><button>view history</button></a>

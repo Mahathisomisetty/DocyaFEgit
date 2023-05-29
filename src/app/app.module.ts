@@ -43,6 +43,9 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
 import { BookappointmentComponent } from './patient/bookappointment/bookappointment.component';
 import {MatSelectModule} from '@angular/material/select';
 import { ViewEncapsulation } from '@angular/compiler';
+import { DoctoraddComponent } from './doctor/doctoradd/doctoradd.component';
+import { PatienthistoryComponent } from './patient/patienthistory/patienthistory.component';
+import { VprescriptionComponent } from './patient/vprescription/vprescription.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +69,10 @@ import { ViewEncapsulation } from '@angular/compiler';
     BookavailabilityComponent,
     AdminprofileComponent,
     FrontpageComponent,
-    BookappointmentComponent
+    BookappointmentComponent,
+    DoctoraddComponent,
+    PatienthistoryComponent,
+    VprescriptionComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,

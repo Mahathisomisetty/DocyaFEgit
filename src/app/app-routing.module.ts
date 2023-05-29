@@ -21,6 +21,9 @@ import { BookavailabilityComponent } from './doctor/bookavailability/bookavailab
 import { AdminprofileComponent } from './admin/adminprofile/adminprofile.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
 import { BookappointmentComponent } from './patient/bookappointment/bookappointment.component';
+import { DoctoraddComponent } from './doctor/doctoradd/doctoradd.component';
+import { PatienthistoryComponent } from './patient/patienthistory/patienthistory.component';
+import { VprescriptionComponent } from './patient/vprescription/vprescription.component';
 
 const routes: Routes = [
   {path:'',component:FrontpageComponent},
@@ -45,6 +48,9 @@ const routes: Routes = [
   {path:'bookavailability',component:BookavailabilityComponent},
   {path:'adminprofile',component:AdminprofileComponent},
  {path:'bookappointment',component:BookappointmentComponent},
+ {path:'doctoradd',component:DoctoraddComponent},
+ {path:'patienthistory',component:PatienthistoryComponent},
+ {path:'vprescription',component:VprescriptionComponent},
 { path: "**", redirectTo: "admin" },
 ];
 
