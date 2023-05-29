@@ -1,0 +1,16 @@
+.card{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.button{
+    margin-left: 1100px;
+    padding-left: 10px;
+    margin-right: 20px;
+    background-color: blue;
+    font-size: small;
+}
+table {
+    width: 100%;
+  }
+  

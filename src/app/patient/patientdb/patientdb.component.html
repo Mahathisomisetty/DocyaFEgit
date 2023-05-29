@@ -1,1 +1,64 @@
-<p>patientdb works!</p>
+<p>
+    <mat-toolbar style="background-color: grey; height: 120px; border-radius: 5px;">
+      <button mat-icon-button class="example-icon" aria-label="local_hospital">
+        <mat-icon>local_hospital</mat-icon>
+      </button>
+      <span>Dockya Hospital</span>
+      <ul style="text-decoration: none; list-style: none; display: flex; padding-top: 30px; margin-left: 420px;">
+        <a href="patientdb/" style="text-decoration: none; color: black; margin-left: 400px;"><li><mat-icon matTooltip="dashboard" style="transform: scale(1.5);">dashboard</mat-icon></li>
+        
+        </a>
+        <a href="patienthistory/" style="text-decoration: none; color: black; margin-left: 30px;"> <li style="text-decoration: none;"><mat-icon matTooltip="Previous_medical_history" style="transform: scale(1.5);">history</mat-icon></li></a>
+     <a href="pprofile/"><li style=" text-decoration: none;color: black; margin-left: 30px;"><mat-icon matTooltip="Profile" style="transform: scale(1.5);">person</mat-icon></li></a>
+       <a href="login/" style="text-decoration: none; color: black; margin-left: 30px;"><li><mat-icon matTooltip="logout" style="transform: scale(1.5);">logout</mat-icon></li></a> 
+      </ul>
+    </mat-toolbar>
+  </p>
+  <div class="card">
+    <!-- <h1>{{ greetingMessage }} Doctor</h1> -->
+    
+    
+    <h1>{{ greetingMessage }} (patient name)</h1>
+      <p>Booked Appoinments by You</p>
+      
+      <button style="margin-left: 1050px;" mat-raised-button (click)="openDialog()" color="primary"class="button">Book Appointment</button>
+      <br><br>
+      
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <!-- Implicit Column -->
+          <ng-container matColumnDef="serialno">
+            <th mat-header-cell *matHeaderCellDef> S.NO </th>
+            <td mat-cell *matCellDef="let data"> {{data.serialno}} </td>
+          </ng-container>
+        
+          <!-- Index Column -->
+          <ng-container matColumnDef="doctor">
+            <th mat-header-cell *matHeaderCellDef> Doctor </th>
+            <td mat-cell *matCellDef="let data"> {{data.doctor}} </td>
+          </ng-container>
+        
+          <!-- Count Column -->
+          <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef> Date </th>
+            <td mat-cell *matCellDef="let data"> {{data.date | date }} </td>
+          </ng-container>
+        
+          <!-- First Column -->
+          <!-- <ng-container matColumnDef="disease">
+            <th mat-header-cell *matHeaderCellDef> Disease </th>
+            <td mat-cell *matCellDef="let data "> {{data.disease}} </td>
+          </ng-container> -->
+        
+          <!-- Last Column -->
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let data"> {{data.status}} </td>
+          </ng-container>
+      
+        
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+        
+  </div>
+  

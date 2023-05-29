@@ -48,6 +48,7 @@ import { PatienthistoryComponent } from './patient/patienthistory/patienthistory
 import { VprescriptionComponent } from './patient/vprescription/vprescription.component';
 import { PprofileComponent } from './patient/pprofile/pprofile.component';
 import { PatientdbComponent } from './patient/patientdb/patientdb.component';
+import { FpasswordComponent } from './fpassword/fpassword.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,7 +77,8 @@ import { PatientdbComponent } from './patient/patientdb/patientdb.component';
     PatienthistoryComponent,
     VprescriptionComponent,
     PprofileComponent,
-    PatientdbComponent
+    PatientdbComponent,
+    FpasswordComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,

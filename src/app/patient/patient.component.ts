@@ -3,6 +3,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatTableDataSource} from '@angular/material/table';
 import { MatDialog } from '@angular/material/dialog';
 import { BookappointmentComponent } from './bookappointment/bookappointment.component';
+import { MatSnackBar } from '@angular/material/snack-bar';
 export interface data {
   serialno: number;
   doctor: string;
@@ -28,11 +29,15 @@ export class PatientComponent {
 
   constructor(private dialog: MatDialog, ) {
     this.currentDate = new Date();
+    this.currentTime = new Date();
+    this.setGreetingMessage();
   }
 
   displayedColumns: string[] = ['serialno','doctor','date','status'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   title ='angular-dialog';
+  currentTime: Date;
+  greetingMessage!: string;
 
   openDialog(): void {
     const dialogRef = this.dialog.open(BookappointmentComponent, {
@@ -46,5 +51,15 @@ export class PatientComponent {
       }
     });
   }
-  
+  setGreetingMessage() {
+    const currentHour = this.currentTime.getHours();
+
+    if (currentHour < 12) {
+      this.greetingMessage = 'Good Morning!';
+    } else if (currentHour < 17) {
+      this.greetingMessage = 'Good Afternoon!';
+    } else {
+      this.greetingMessage = 'Good Evening!';
+    }
+  }
 }
