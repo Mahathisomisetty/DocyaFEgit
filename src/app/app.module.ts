@@ -46,6 +46,8 @@ import { ViewEncapsulation } from '@angular/compiler';
 import { DoctoraddComponent } from './doctor/doctoradd/doctoradd.component';
 import { PatienthistoryComponent } from './patient/patienthistory/patienthistory.component';
 import { VprescriptionComponent } from './patient/vprescription/vprescription.component';
+import { PprofileComponent } from './patient/pprofile/pprofile.component';
+import { PatientdbComponent } from './patient/patientdb/patientdb.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +74,9 @@ import { VprescriptionComponent } from './patient/vprescription/vprescription.co
     BookappointmentComponent,
     DoctoraddComponent,
     PatienthistoryComponent,
-    VprescriptionComponent
+    VprescriptionComponent,
+    PprofileComponent,
+    PatientdbComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,

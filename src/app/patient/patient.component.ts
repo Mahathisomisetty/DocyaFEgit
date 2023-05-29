@@ -7,15 +7,15 @@ export interface data {
   serialno: number;
   doctor: string;
   date: Date;
-  disease: string;
-  prescription:string,
+  
+  status:string,
  
 
 }
 const ELEMENT_DATA: data[] = [
-  {serialno:1, doctor:'Karl', date:new Date ,disease:'A disease is a particular abnormal condition that negatively affects the structure or function of all or part of an organism.',prescription:'The active part of the medicine is contained inside a plastic shell that dissolves slowly in the stomach.'},
-  {serialno:2, doctor:'Parameshwar', date:new Date ,disease:'To feel pain or distress, sustain injury or harm, suffer from arthritis, made the people suffer for their disloyalty.',prescription:'The medication is Penicillin VK and your healthcare provider ordered one 250 milliliter (ml) bottle, which is about 8 ounces.'},
-  {serialno:3, doctor:'Kamesh', date:new Date ,disease:' feel (something painful, injurious, or unpleasant), suffer a heart attack, suffer a debilitating illness, suffer pain.',prescription:'The medication is Penicillin VK and your healthcare provider ordered one 250 milliliter (ml) bottle, which is about 8 ounces.'},
+  {serialno:1, doctor:'Karl', date:new Date ,status:'visited'},
+  {serialno:2, doctor:'Parameshwar', date:new Date ,status:'not visited'},
+  {serialno:3, doctor:'Kamesh', date:new Date , status:'visited'},
 
 ];
 @Component({
@@ -30,7 +30,7 @@ export class PatientComponent {
     this.currentDate = new Date();
   }
 
-  displayedColumns: string[] = ['serialno','doctor','date','disease','prescription'];
+  displayedColumns: string[] = ['serialno','doctor','date','status'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   title ='angular-dialog';
 
@@ -46,4 +46,5 @@ export class PatientComponent {
       }
     });
   }
+  
 }
