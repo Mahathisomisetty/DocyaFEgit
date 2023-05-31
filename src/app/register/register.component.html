@@ -31,7 +31,7 @@
                       <input matInput>
                     </mat-form-field></td>&nbsp;&nbsp;&nbsp;&nbsp;
                     <td><mat-form-field class="example-full-width">
-                      <mat-label>Blood Gruop</mat-label>
+                      <mat-label>Blood Group</mat-label>
                       <input matInput>
                     </mat-form-field></td>
                   </tr></table>
@@ -44,9 +44,9 @@
                             <mat-label>Enter your email</mat-label>
                             <input matInput placeholder="pat@example.com" [formControl]="email" required>
                             <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-                          </mat-form-field></td>
-                        <td>
-                        <td> <mat-form-field appearance="fill">
+                          </mat-form-field></td>&nbsp;&nbsp;&nbsp;
+                        
+                        <td> <mat-form-field appearance="fill" style="width: 216px;">
                             <mat-label>Enter your password</mat-label>
                             <input matInput [type]="hide ? 'password' : 'text'">
                             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
@@ -86,4 +86,4 @@
     </div>
    
   
-  <footer class="foot" style="background-color:green;">&copy; CopyRight by Docya 2023</footer>
+  
