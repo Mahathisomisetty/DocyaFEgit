@@ -78,15 +78,15 @@
         </li>
       </ul>
       <a href="#" class="utility-bar__account">
-        <span class="utility-bar__account-avatar"></span>
-        <span class="utility-bar__account-name">Keenan Staffieri</span>
+        <!-- <span class="utility-bar__account-avatar"></span>
+        <span class="utility-bar__account-name">Keenan Staffieri</span> -->
       </a>
     </div>
   </nav>
 
   <main>
-<div class="container">
-    <mat-card class="card" style="padding-left: 300px;">
+<div class="container" style="padding-left: 300px;">
+   
         <mat-card-content>
             <form class="example-form" style="width: 500px;">
                              
@@ -135,7 +135,16 @@
                   </tr>
               </table>
             </form>
-            <mat-form-field class="example-full-width">
+            
+              <td><mat-form-field style="width: 212px;">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field></td>&nbsp; &nbsp;&nbsp;
+              
+              <mat-form-field class="example-full-width" style="height: 70px;">
                 <mat-label>Description</mat-label>
                 <textarea matInput placeholder="Ex. Famous for Cardilogist ...">Specialist in ...</textarea>
               </mat-form-field>
@@ -145,7 +154,7 @@
             <button mat-button mat-dialog-close class="save">Cancel</button>
         </div>
             
-    </mat-card>
+   
 </div>
 
 </main>

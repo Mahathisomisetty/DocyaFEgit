@@ -20,5 +20,6 @@ export class AddnurseComponent {
 
     })
   }
+  hide = true;
   
 }

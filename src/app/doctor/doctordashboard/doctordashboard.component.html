@@ -36,7 +36,7 @@
     <p>Appointments for the day</p>
     <h4>{{ currentDate | date: 'dd-MMM-yyyy' }}</h4>
     <mat-form-field>
-        <mat-label>Filter</mat-label>
+        <mat-label><mat-icon>search</mat-icon>Search here</mat-label>
         <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
       </mat-form-field>
       
