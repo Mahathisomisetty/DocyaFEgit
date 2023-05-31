@@ -1,0 +1,40 @@
+<div >
+    <mat-dialog-content style="height: 450px;">
+        <h2 style="padding-left: 150px;">Add Prescription </h2>
+        <br>
+        <mat-form-field class="example-full-width" style="width: 350px; padding-left: 50px;">
+            <mat-label>Medical/Drug Name</mat-label>
+            <mat-select>
+                <mat-option value="cetrizine">Cetrizine</mat-option>
+                <mat-option value="dolo">Dolo</mat-option>
+                <mat-option value="saridon">Saridon</mat-option>
+                <mat-option value="paracetmol">Paracetmol</mat-option>
+                <mat-option value="combiflam">Combiflam</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-form-field class="example-full-width" style="width: 350px; padding-left: 50px;">
+          <mat-label>Dosage</mat-label>
+            <mat-select>
+                <mat-option value="1-1-1">1-1-1</mat-option>
+                <mat-option value="1-0-1">1-0-1</mat-option>
+                <mat-option value="0-1-1">0-1-1</mat-option>
+                <mat-option value="0-0-1">0-0-1</mat-option>
+                <mat-option value="0-1-0">0-1-0</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <br>
+        <br>
+        <mat-radio-group aria-label="Select an option" style="padding-left: 50px;">
+            <mat-radio-button value="1">Before food</mat-radio-button>
+            <mat-radio-button value="2">After food</mat-radio-button>
+        </mat-radio-group>    
+        <br>
+        <div class="button" align="end">
+            <button mat-button mat-dialog-close class="saved">Save</button>
+            <button mat-button mat-dialog-close class="save">Cancel</button>
+        </div>   
+    </mat-dialog-content>
+</div>
+

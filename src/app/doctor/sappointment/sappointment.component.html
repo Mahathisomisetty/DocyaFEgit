@@ -1,0 +1,83 @@
+<div><p>
+    <mat-toolbar style="background-color: skyblue; height: 120px; border-radius: 5px;">
+      <button mat-icon-button class="example-icon" aria-label="local_hospital">
+        <mat-icon>local_hospital</mat-icon>
+      </button>
+      <span>Dockya Hospital</span>
+      <!-- <ul style="text-decoration: none; list-style: none; display: flex; padding-top: 30px; margin-left: 420px;">
+        <a href="patientdb/" style="text-decoration: none; color: black; margin-left: 400px;"><li><mat-icon matTooltip="dashboard" style="transform: scale(1.5);">dashboard</mat-icon></li>
+        
+        </a>
+        <a href="patienthistory/" style="text-decoration: none; color: black; margin-left: 30px;"> <li style="text-decoration: none;"><mat-icon matTooltip="Previous_medical_history" style="transform: scale(1.5);">history</mat-icon></li></a>
+     <a href="pprofile/"><li style=" text-decoration: none;color: black; margin-left: 30px;"><mat-icon matTooltip="Profile" style="transform: scale(1.5);">person</mat-icon></li></a>
+       <a href="login/" style="text-decoration: none; color: black; margin-left: 30px;"><li><mat-icon matTooltip="logout" style="transform: scale(1.5);">logout</mat-icon></li></a> 
+      </ul> -->
+    </mat-toolbar>
+  </p>
+  <h1 class="heading1" style="margin:15px">Patient Info</h1>
+  <br>
+  <br>
+  <div class="content">
+      <p style="margin-right: 350px; margin-left:20px; padding-left: 15px;"><b>Name</b>: Sam</p>
+      <p style="margin-right: 350px;"><b>Blood Group</b>   : A+</p>
+      <p><b>Previous Consultation</b> : {{ currentDate }} </p>
+  </div>
+  <br>
+  <div class="content">
+      <p style="margin-right: 370px; margin-left:20px; padding-left: 15px;"><b>Age</b>     : 23</p>
+      <p style="margin-right: 355px;"><b>Gender</b>       : Female</p>
+      <p><b>Consulation Doctor</b>    :   Dr.Karl</p>
+  </div>
+  <br>
+  <br>
+  <h1 class="heading1" style="margin: 15px;">Patient Health History</h1>
+ 
+  <button mat-button (click)="openDialogBox8()">New Observation</button>
+  <br>
+  <br>
+  <div class="card">  
+      <mat-card class="text" style="padding: 50px;">  
+      <p style="padding-left: 20px; padding-top: 20px;"><b>Observations</b></p>
+      <h5 style="padding-left: 20px;">Made by Dr.Karl on {{currentDate | date: 'dd-MMM-yyyy' }}</h5>
+      <p style="padding-left: 20px;"><b>Key Notes</b></p>
+      <p style="padding-left: 20px;">Athritis is a common pain and cause inflammation in joints.</p>
+      <button style="margin-left:950px ; background-color:skyblue" class="button" mat-button (click)="openDialog()">view prescription</button>
+      <br>
+      <br>
+      
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <!-- Implicit Column -->
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>ID </th>
+            <td mat-cell *matCellDef="let data"> {{data.id}} </td>
+          </ng-container>
+        
+          <!-- Index Column -->
+          <ng-container matColumnDef="test">
+            <th mat-header-cell *matHeaderCellDef> Test Conducted </th>
+            <td mat-cell *matCellDef="let data"> {{data.test}} </td>
+          </ng-container>
+        
+          <!-- Count Column -->
+          <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef> Status </th>
+            <td mat-cell *matCellDef="let data"> {{data.status }} </td>
+          </ng-container>
+        
+          <!-- First Column -->
+          <ng-container matColumnDef="remarks">
+            <th mat-header-cell *matHeaderCellDef>Remarks </th>
+            <td mat-cell *matCellDef="let data "> {{data.remarks}} </td>
+          </ng-container>
+         
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <br>
+      
+      <button mat-button (click)="openDialogBox7()">Add Prescription</button>
+      </mat-card> 
+      
+  </div>
+  
+  </div>

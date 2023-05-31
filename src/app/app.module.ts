@@ -51,6 +51,10 @@ import { PatientdbComponent } from './patient/patientdb/patientdb.component';
 import { FpasswordComponent } from './fpassword/fpassword.component';
 import { UpdatedocComponent } from './admin/updatedoc/updatedoc.component';
 import { UpdatenurseComponent } from './admin/updatenurse/updatenurse.component';
+import { SappointmentComponent } from './doctor/sappointment/sappointment.component';
+import { NewobservationComponent } from './doctor/newobservation/newobservation.component';
+import { EditpresComponent } from './doctor/editpres/editpres.component';
+import {MatRadioModule} from '@angular/material/radio';
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,14 +86,17 @@ import { UpdatenurseComponent } from './admin/updatenurse/updatenurse.component'
     PatientdbComponent,
     FpasswordComponent,
     UpdatedocComponent,
-    UpdatenurseComponent
+    UpdatenurseComponent,
+    SappointmentComponent,
+    NewobservationComponent,
+    EditpresComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
     AppRoutingModule,MatDialogModule,MatInputModule,MatCardModule,MatToolbarModule,
     BrowserAnimationsModule,MatMenuModule,MatIconModule,MatButtonModule,MatFormFieldModule,
     ReactiveFormsModule,MatTooltipModule, MatTableModule,MatDatepickerModule,MatNativeDateModule ,
-    MatSelectModule,
+    MatSelectModule,MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

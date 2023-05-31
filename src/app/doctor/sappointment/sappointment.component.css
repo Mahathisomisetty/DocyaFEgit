@@ -1,0 +1,30 @@
+.heading1{
+    margin: 0;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid lightslategrey;
+}
+.content{
+    display: inline-flex;
+    flex: 1 1 auto;
+}
+.card{
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 1300px;
+    height: 500px;
+}
+.text{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button{
+    margin-left: 1075px;
+    background-color: blue;
+    width: 170px;
+}
+.mat-elevation-z8{
+   padding-right: 20px;
+    margin-right: 70px;
+    border-right: 20px;
+}

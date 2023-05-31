@@ -29,6 +29,9 @@ import { PatientdbComponent } from './patient/patientdb/patientdb.component';
 import { FpasswordComponent } from './fpassword/fpassword.component';
 import { UpdatedocComponent } from './admin/updatedoc/updatedoc.component';
 import { UpdatenurseComponent } from './admin/updatenurse/updatenurse.component';
+import { SappointmentComponent } from './doctor/sappointment/sappointment.component';
+import { NewobservationComponent } from './doctor/newobservation/newobservation.component';
+import { EditpresComponent } from './doctor/editpres/editpres.component';
 
 const routes: Routes = [
   {path:'',component:FrontpageComponent},
@@ -61,6 +64,9 @@ const routes: Routes = [
  {path:'fpassword',component:FpasswordComponent},
  {path:'updatedoc',component:UpdatedocComponent},
  {path:'updatenurse',component:UpdatenurseComponent},
+ {path:'sappointment',component:SappointmentComponent},
+ {path:'newobservation',component:NewobservationComponent},
+ {path:'editpres',component:EditpresComponent},
 { path: "**", redirectTo: "admin" },
 ];
 
