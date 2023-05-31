@@ -4,7 +4,7 @@
     font-family: Roboto;
     background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(120deg, #007bff, #d0314c);
+    background: linear-gradient(120deg,violet,indigo,blue,green,yellow,orange,red);
     height: 100vh;
     overflow: hidden;
   }
