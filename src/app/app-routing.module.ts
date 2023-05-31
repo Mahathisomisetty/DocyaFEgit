@@ -27,6 +27,8 @@ import { VprescriptionComponent } from './patient/vprescription/vprescription.co
 import { PprofileComponent } from './patient/pprofile/pprofile.component';
 import { PatientdbComponent } from './patient/patientdb/patientdb.component';
 import { FpasswordComponent } from './fpassword/fpassword.component';
+import { UpdatedocComponent } from './admin/updatedoc/updatedoc.component';
+import { UpdatenurseComponent } from './admin/updatenurse/updatenurse.component';
 
 const routes: Routes = [
   {path:'',component:FrontpageComponent},
@@ -57,6 +59,8 @@ const routes: Routes = [
  {path:'pprofile',component:PprofileComponent},
  {path:'patientdb',component:PatientdbComponent},
  {path:'fpassword',component:FpasswordComponent},
+ {path:'updatedoc',component:UpdatedocComponent},
+ {path:'updatenurse',component:UpdatenurseComponent},
 { path: "**", redirectTo: "admin" },
 ];
 
