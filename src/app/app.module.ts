@@ -56,6 +56,7 @@ import { NewobservationComponent } from './doctor/newobservation/newobservation.
 import { EditpresComponent } from './doctor/editpres/editpres.component';
 import {MatRadioModule} from '@angular/material/radio';
 import { EditpprofileComponent } from './patient/editpprofile/editpprofile.component';
+import { AddbasicdetailsComponent } from './nurse/addbasicdetails/addbasicdetails.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -91,7 +92,8 @@ import { EditpprofileComponent } from './patient/editpprofile/editpprofile.compo
     SappointmentComponent,
     NewobservationComponent,
     EditpresComponent,
-    EditpprofileComponent
+    EditpprofileComponent,
+    AddbasicdetailsComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,

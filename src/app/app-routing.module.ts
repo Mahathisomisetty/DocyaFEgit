@@ -33,6 +33,7 @@ import { SappointmentComponent } from './doctor/sappointment/sappointment.compon
 import { NewobservationComponent } from './doctor/newobservation/newobservation.component';
 import { EditpresComponent } from './doctor/editpres/editpres.component';
 import { EditpprofileComponent } from './patient/editpprofile/editpprofile.component';
+import { AddbasicdetailsComponent } from './nurse/addbasicdetails/addbasicdetails.component';
 
 const routes: Routes = [
   {path:'',component:FrontpageComponent},
@@ -69,6 +70,7 @@ const routes: Routes = [
  {path:'newobservation',component:NewobservationComponent},
  {path:'editpprofile',component:EditpprofileComponent},
  {path:'editpres',component:EditpresComponent},
+ {path:'addbasicdetails',component:AddbasicdetailsComponent},
 { path: "**", redirectTo: "admin" },
 ];
 

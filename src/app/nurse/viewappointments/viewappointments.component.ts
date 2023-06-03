@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import {MatDialog} from '@angular/material/dialog';
+import { AddbasicdetailsComponent } from '../addbasicdetails/addbasicdetails.component';
 
 @Component({
   selector: 'app-viewappointments',
@@ -10,7 +11,12 @@ import {MatDialog} from '@angular/material/dialog';
 export class ViewappointmentsComponent {
   currentDate: Date;
 
-  constructor() {
+  constructor(public dialog: MatDialog) {
     this.currentDate = new Date();
+  }
+  
+
+  openDialog() {
+    this.dialog.open(AddbasicdetailsComponent);
   }
 }

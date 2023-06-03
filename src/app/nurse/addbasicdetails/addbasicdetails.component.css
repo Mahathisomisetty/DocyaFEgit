@@ -1,0 +1,11 @@
+
+.save{
+    align-items: center;
+    float: inline-end;
+  }
+  .save:hover{
+    background-color: red;
+  }
+  .saved:hover{
+    background-color: blue;
+  }
