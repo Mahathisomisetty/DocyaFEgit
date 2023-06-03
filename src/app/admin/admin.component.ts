@@ -15,7 +15,10 @@ import { MatListModule } from '@angular/material/list';
 })
 export class AdminComponent {
   title ='angular-dialog';
-  constructor(public MatDialog: MatDialog) {}
+  constructor(public MatDialog: MatDialog) {
+    this.currentTime = new Date();
+    this.setGreetingMessage();
+  }
 
   openDialog() {
     
@@ -27,6 +30,20 @@ export class AdminComponent {
 
     })
   }
+  currentTime: Date;
+  greetingMessage!: string;
+
   
+  setGreetingMessage() {
+    const currentHour = this.currentTime.getHours();
+
+    if (currentHour < 12) {
+      this.greetingMessage = 'Good morning!';
+    } else if (currentHour < 17) {
+      this.greetingMessage = 'Good afternoon!';
+    } else {
+      this.greetingMessage = 'Good evening!';
+    }
+  }
  
 }
