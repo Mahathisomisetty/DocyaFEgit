@@ -43,7 +43,7 @@ body {
   
   .content {
     width: 90%;
-    height: 500px;
+    height: auto;
     background: #fff;
     margin: 0 auto;
     margin-top: -3em;

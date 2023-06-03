@@ -37,7 +37,7 @@
     <h4>{{ currentDate | date: 'dd-MMM-yyyy' }}</h4>
     <mat-form-field>
         <mat-label><mat-icon>search</mat-icon>Search here</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
+        <input style="width: auto;" matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
       </mat-form-field>
       
       <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">

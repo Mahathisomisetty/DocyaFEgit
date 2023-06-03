@@ -32,7 +32,7 @@
   <br>
   <h1 class="heading1" style="margin: 15px;">Patient Health History</h1>
  
-  <button mat-button (click)="openDialogBox8()">New Observation</button>
+  <button matTooltip="add_new_observation" style="background-color: skyblue;" mat-button (click)="openDialogBox8()">New Observation</button>
   <br>
   <br>
   <div class="card">  
@@ -41,7 +41,7 @@
       <h5 style="padding-left: 20px;">Made by Dr.Karl on {{currentDate | date: 'dd-MMM-yyyy' }}</h5>
       <p style="padding-left: 20px;"><b>Key Notes</b></p>
       <p style="padding-left: 20px;">Athritis is a common pain and cause inflammation in joints.</p>
-      <button style="margin-left:950px ; background-color:skyblue" class="button" mat-button (click)="openDialog()">view prescription</button>
+      <button matTooltip="View_Prescription" style="margin-left:950px ; background-color:skyblue" class="button" mat-button (click)="openDialog()">view prescription</button>
       <br>
       <br>
       
@@ -75,7 +75,7 @@
       </table>
       <br>
       
-      <button mat-button (click)="openDialogBox7()">Add Prescription</button>
+      <button matTooltip="Add_Prescription" style="background-color: skyblue;" mat-button (click)="openDialogBox7()">Add Prescription</button>
       </mat-card> 
       
   </div>
