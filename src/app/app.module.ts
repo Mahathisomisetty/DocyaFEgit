@@ -55,6 +55,7 @@ import { SappointmentComponent } from './doctor/sappointment/sappointment.compon
 import { NewobservationComponent } from './doctor/newobservation/newobservation.component';
 import { EditpresComponent } from './doctor/editpres/editpres.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { EditpprofileComponent } from './patient/editpprofile/editpprofile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -89,7 +90,8 @@ import {MatRadioModule} from '@angular/material/radio';
     UpdatenurseComponent,
     SappointmentComponent,
     NewobservationComponent,
-    EditpresComponent
+    EditpresComponent,
+    EditpprofileComponent
   ],
   imports: [
     BrowserModule,MatSlideToggleModule,MatSidenavModule,MatCommonModule,
